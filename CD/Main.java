@@ -18,7 +18,7 @@ public class Main {
 				EOF = true;
 			}
 			else{
-				ownedCDs = new HashMap<Integer, Boolean>(Jack+Jill, 1); // set max size and make sure hashmap is not refreshed by settings load factor to 1
+				ownedCDs = new HashMap<Integer, Boolean>(Jack+Jill, 1); // set max size and make sure hashmap is not refreshed by setting load factor to 1
 				System.out.println(readList(stdin));
 			}
 		}
