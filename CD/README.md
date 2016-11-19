@@ -9,3 +9,5 @@ The input consists of a sequence of test cases. The first line of each test case
 
 ###Output
 For each test case, output a line containing one integer, the number of CDs that Jack and Jill both own.
+
+https://open.kattis.com/problems/cd
