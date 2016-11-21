@@ -19,13 +19,11 @@ public class Main {
 			int startChar = 0;
 			for(int c = 0; c < s.length(); ++c)
 			{
-				if(i>=s.length())
-					i = i % s.length();
 				ss[i] = s.charAt(c);
 				i = (i + n);
 				if(i>=s.length()){
 					startChar++;
-					i = startChar;
+					i = startChar % s.length();
 				}
 			}
 			System.out.println(ss);
