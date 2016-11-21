@@ -19,7 +19,7 @@ public class Main {
 			list.add(Integer.parseInt(a[i]));
 		}
 		int min = 0;
-		for(int reps = 0; reps < 500; reps++){ //run enough times to guarantee list is min
+		for(int reps = 0; reps < 480; reps++){ //run enough times to guarantee list is min
 			min = naive(list);
 		}
 		System.out.println(min);
