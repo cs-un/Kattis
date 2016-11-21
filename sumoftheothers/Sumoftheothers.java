@@ -1,5 +1,3 @@
-package sumoftheothers;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class Sumoftheothers {
