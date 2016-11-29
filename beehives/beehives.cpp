@@ -38,7 +38,6 @@ int main(void) {
 			{
 				if(dist(hives[i].x,hives[i].y,hives[c].x,hives[c].y) <=d)
 				{
-					std::cout << dist(hives[i].x,hives[i].y,hives[c].x,hives[c].y) << std::endl;
 					if(!hives[i].sour)
 					{
 						sour++;
