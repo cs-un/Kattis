@@ -3,7 +3,7 @@
 int main(void) {
     std::string in;
     int n = 500;
-    std::cout << n << std::endl << std::flush;
+    std::cout << n << std::endl;
     int min = 0;
     int max = 1000;
     while(std::cin >> in)
@@ -20,7 +20,7 @@ int main(void) {
             min = n + 1;
             n = (max + min)/2;
         }
-        std::cout << n << std::endl << std::flush;
+        std::cout << n << std::endl;
     }
     return 0;   
 }
