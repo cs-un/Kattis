@@ -1,5 +1,4 @@
 #include <iostream>
-#include <math.h>
 
 //naive solution, meets time requirements... but slow
 long calc(long n)
