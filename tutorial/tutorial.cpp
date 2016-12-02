@@ -7,15 +7,15 @@ bool test(int n, int exp)
 {
 	int product = n;
 	for(int i = 1; i < exp; ++i)
+	{
+		product*=n;
+		if(product > m)
 		{
-			product*=n;
-			if(product > m)
-			{
-				TLE;
-				return true;
-			}
+			TLE;
+			return true;
 		}
-		return false;
+	}
+	return false;
 }
 
 int main(void)
