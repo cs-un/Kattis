@@ -19,14 +19,10 @@ int main() {
 			s = s.substr(6);
 		std::cout << s;
 		if(exit)
-		{
 			std::cout << " exited " << (people[s] == false ? "(ANOMALY)" : "") << std::endl;
-			people[s] = !exit;
-		}
-		else{
+		else
 			std::cout << " entered " << (people[s] ? "(ANOMALY)" : "") << std::endl;
-			people[s] = !exit;
-		}
+		people[s] = !exit;
 	}
 	return 0;
 }
