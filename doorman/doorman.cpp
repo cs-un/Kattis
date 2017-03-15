@@ -14,14 +14,13 @@ int main() {
 			balance++;
 		else
 			balance--;
-		
+
 		if(balance > maxDiff || balance < -maxDiff)
 		{
 			if((i+1) < s.length() && s[i+1] != s[i])
 			{
-				if(s[i+1] == 'M'){
+				if(s[i+1] == 'M')
 					balance++;
-				}
 				else
 					balance--;
 				i++;
