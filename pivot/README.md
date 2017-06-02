@@ -8,7 +8,7 @@ Now the actual job in this problem is this: Starting from an array A that has nn
 For example, if A’ = {2,1,3,4,7,5,6,8}, then 3 integers: {3,4,8} could have been the pivot of partition, e.g. {2,1,3} to the left of integer 4 are smaller than 4 and {7,5,6,8} to the right of integer 4 are greater than 4. However, the other 5 integers cannot possibly be the pivot, e.g. integer 7 cannot possibly be the pivot as there are {5,6} to the right of integer 7.
 
 ### Input
-The input consists of two lines. The first line contains integer nn (3≤n≤1000003≤n≤100000). The second line contains nn distinct 32-bit signed integers that describes the transformed array A′A′.
+The input consists of two lines. The first line contains integer n (3≤n≤100000). The second line contains nn distinct 32-bit signed integers that describes the transformed array A′.
 
 ### Output
 Output the required answer as a single integer in one line.
