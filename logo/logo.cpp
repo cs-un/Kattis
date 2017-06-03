@@ -14,7 +14,7 @@ int main(void) {
 		std::cin >> n;
 		double x = 0, y = 0;
 		int angle = 0;
-		for(int i = 0; i < n; ++i){
+		while(n--){
 			std::string s;
 			int param;
 			std::cin >> s >> param;
@@ -30,27 +30,8 @@ int main(void) {
 			}
 			else if(s == "lt")
 				angle = (angle + param) % 360;
-			else if(s == "rt")
+			else
 				angle = (angle - param) % 360;
-			/*
-			switch(std::stoi(s.substr(0,2)))
-			{
-				case std::stoi("fd"):
-					x += std::stod(s.substr(4)) * cos(PI * angle/180);
-					y += std::stod(s.substr(4)) * sin(PI * angle/180);
-				break;
-				case std::stoi("bk"):
-					x -= std::stod(s.substr(4)) * cos(PI * angle/180);
-					y -= std::stod(s.substr(4)) * sin(PI * angle/180);
-				break;
-				case std::stoi("lt"):
-				angle = angle - std::stoi(s.substr(4)) % 360;
-				break;
-				case std::stoi("rt"):
-				angle = angle + std::stoi(s.substr(4)) % 360;
-				break;
-			}
-			*/
 		}
 		long dist = round(sqrt(pow(x,2) + pow(y,2)));
 		std::cout << dist << std::endl;
