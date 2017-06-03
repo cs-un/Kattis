@@ -9,15 +9,11 @@ long calc(long n)
     if(n==0)
         return 0;
     long s = 4;
-    int c = 1;
     for(long i = 3; i <= n; ++i)
     {
-        if(c==2){
-            c = 0;
+        if(i%2==0)
             k++;
-        }
         s+=k;
-        c++;
     }
     return s;
 }
