@@ -8,7 +8,6 @@ for customers in sys.stdin:
       input = list(map(int, sys.stdin.readline().split()))
       waits.append(input[0] * sum(input[1:])/len(input[1:]))
    waits.sort()
-   print(len(waits))
    for i in range(1, len(waits)):
       waits[i] = waits[i - 1] + waits[i]
    print(sum(waits)/(len(waits) - 1))
